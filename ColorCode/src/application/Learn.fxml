@@ -2,17 +2,31 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LearnController">
    <children>
       <AnchorPane prefHeight="800.0" prefWidth="900.0">
          <children>
             <Button fx:id="home" layoutX="698.0" layoutY="598.0" mnemonicParsing="false" onAction="#onHome" prefHeight="100.0" prefWidth="100.0" text="Home" />
-            <CheckBox fx:id="red" layoutX="119.0" layoutY="137.0" mnemonicParsing="false" onAction="#createColor" text="Red" />
-            <CheckBox fx:id="blue" layoutX="119.0" layoutY="166.0" mnemonicParsing="false" onAction="#createColor" prefWidth="57.0" text="Blue" />
-            <CheckBox fx:id="yellow" layoutX="119.0" layoutY="195.0" mnemonicParsing="false" onAction="#createColor" prefHeight="21.0" prefWidth="79.0" text="Yellow" />
-            <Button fx:id="add" layoutX="143.0" layoutY="257.0" mnemonicParsing="false" onAction="#createColor" text="+" />
+            <CheckBox fx:id="red" layoutX="164.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" text="Red" textFill="RED">
+               <font>
+                  <Font size="47.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="blue" layoutX="356.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="189.0" text="Blue" textFill="BLUE">
+               <font>
+                  <Font size="47.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="yellow" layoutX="552.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="231.0" text="Yellow" textFill="YELLOW">
+               <font>
+                  <Font size="47.0" />
+               </font></CheckBox>
+            <Label fx:id="color" layoutX="241.0" layoutY="271.0" text="No Color is Selected" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="47.0" />
+               </font></Label>
          </children>
       </AnchorPane>
    </children>

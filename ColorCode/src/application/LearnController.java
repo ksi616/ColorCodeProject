@@ -1,5 +1,6 @@
 package application;
 
+
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -9,13 +10,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class LearnController {
 	
     @FXML
     private Button home;
-    
+
     @FXML
     private CheckBox red;
 
@@ -26,28 +28,51 @@ public class LearnController {
     private CheckBox yellow;
     
     @FXML
-    private Button add;
+    private Label color;
+
     
-    int pattern = (red.isSelected() ? 0b0001 : 0)
-    			| (blue.isSelected() ? 0b0010 : 0)
-    			| (yellow.isSelected() ? 0b0100 : 0);
     @FXML
     void createColor(ActionEvent event) {
-    	switch (pattern) {
-    	case 0b0011:
+    		if (red.isSelected()) {
+    			if(blue.isSelected()) {
+    				color.setText("Purple");
+    				if(yellow.isSelected()) {
+    					color.setText("Brown");
+    				}
+    			}
+    			else if(yellow.isSelected()) {
+    				color.setText("Orange");
+    			}
+    			else {
+    				color.setText("Red");
+    			}
     		
-    		break;
-    		
-    	case 0b0101:
-    		
-    		break;
-    		
-    	case 0b0110:
-    		
-    		break;
-    	}
-    	
-    }
+    		}
+    		else if (blue.isSelected()) {
+    			if (yellow.isSelected()) {
+    				color.setText("Green");
+    			}
+    			else {
+    				color.setText("Blue");
+    			}
+    		}
+    		else if(yellow.isSelected()) {
+    			color.setText("Yellow");
+    		}
+    		/*if (red.isSelected() & blue.isSelected()) {
+	    		color.setText("Purple");
+    		}
+    		else if (red.isSelected() & yellow.isSelected()) {	
+	    		color.setText("Orange");
+	    	}
+	    		
+	    	else if (blue.isSelected() & yellow.isSelected()) {
+	    		color.setText("Green");
+	    	}*/
+	    	else {
+	    		color.setText("No Color Selected");
+	    	}
+    	} 
 
     @FXML
     void onHome(ActionEvent event) throws IOException {
