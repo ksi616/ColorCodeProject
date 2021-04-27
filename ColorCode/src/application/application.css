@@ -1,1 +1,10 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#redBtn {
+	-fx-background-color: red;
+}
+#yellowBtn {
+	-fx-background-color: yellow;
+}
+#blueBtn {
+	-fx-background-color: blue;
+}
