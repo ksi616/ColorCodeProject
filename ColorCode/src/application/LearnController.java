@@ -26,15 +26,6 @@ public class LearnController {
     private CheckBox yellow;
     
     @FXML
-    private CheckBox orange;
-
-    @FXML
-    private CheckBox green;
-
-    @FXML
-    private CheckBox purple;
-    
-    @FXML
     private Button add;
     
     int pattern = (red.isSelected() ? 0b0001 : 0)
