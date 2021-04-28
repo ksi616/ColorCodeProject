@@ -13,12 +13,12 @@
 
 <AnchorPane minHeight="800.0" minWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuizController">
 	<children>
-				<Button fx:id="homeBtn" layoutX="763.0" layoutY="662.0" mnemonicParsing="false" onAction="#onHome" prefHeight="100.0" prefWidth="100.0" text="HOME">
+				<Button fx:id="homeBtn" layoutX="693.0" layoutY="608.0" mnemonicParsing="false" onAction="#onHome" prefHeight="100.0" prefWidth="100.0" text="HOME">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="redBtn" alignment="CENTER" layoutX="400.0" layoutY="26.0" mnemonicParsing="false" onAction="#redBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="RED" textFill="#b8b8b8">
+      <Button fx:id="redBtn" alignment="CENTER" layoutX="390.0" layoutY="29.0" mnemonicParsing="false" onAction="#redBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="RED" textFill="#dddddd">
          <effect>
             <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
          </effect>
@@ -26,7 +26,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="blueBtn" alignment="CENTER" layoutX="120.0" layoutY="254.0" mnemonicParsing="false" onAction="#blueBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="BLUE" textFill="#b8b8b8">
+      <Button fx:id="blueBtn" alignment="CENTER" layoutX="120.0" layoutY="254.0" mnemonicParsing="false" onAction="#blueBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="BLUE" textFill="#dddddd">
          <effect>
             <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
          </effect>
@@ -34,7 +34,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="yellowBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="680.0" layoutY="254.0" mnemonicParsing="false" onAction="#yellowBtnToggle" prefHeight="100.0" prefWidth="133.0" stylesheets="application/application.css" text="YELLOW" textFill="#b8b8b8">
+      <Button fx:id="yellowBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="660.0" layoutY="254.0" mnemonicParsing="false" onAction="#yellowBtnToggle" prefHeight="100.0" prefWidth="133.0" stylesheets="application/application.css" text="YELLOW" textFill="#dddddd">
          <effect>
             <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
          </effect>
@@ -42,11 +42,21 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Label layoutX="85.0" layoutY="608.0" text="What two colors make:">
+      <Button fx:id="submitBtn" layoutX="398.0" layoutY="282.0" mnemonicParsing="false" onAction="#submit" prefHeight="50.0" prefWidth="120.0" text="SUBMIT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="288.0" layoutY="238.0" text="Choose colors and click submit.">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="608.0" text="What colors make:">
          <font>
             <Font size="34.0" />
          </font>
       </Label>
-      <Rectangle fx:id="randomColor" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="450.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle fx:id="randomColor" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="398.0" layoutY="558.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
 	</children>
 </AnchorPane>
