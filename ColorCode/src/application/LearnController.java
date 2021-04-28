@@ -67,16 +67,6 @@ public class LearnController {
     			color.setText("Yellow");
     			color.setTextFill(Color.YELLOW);
     		}
-    		/*if (red.isSelected() & blue.isSelected()) {
-	    		color.setText("Purple");
-    		}
-    		else if (red.isSelected() & yellow.isSelected()) {	
-	    		color.setText("Orange");
-	    	}
-	    		
-	    	else if (blue.isSelected() & yellow.isSelected()) {
-	    		color.setText("Green");
-	    	}*/
 	    	else {
 	    		color.setText("No Color Selected");
 	    		color.setTextFill(Color.BLACK);
