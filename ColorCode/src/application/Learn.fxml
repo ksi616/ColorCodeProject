@@ -23,7 +23,7 @@
                <font>
                   <Font size="47.0" />
                </font></CheckBox>
-            <Label fx:id="color" layoutX="241.0" layoutY="271.0" text="No Color is Selected" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+            <Label fx:id="color" alignment="CENTER" layoutX="241.0" layoutY="271.0" text="No Color is Selected" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
                <font>
                   <Font size="47.0" />
                </font></Label>
