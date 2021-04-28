@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class LearnController {
@@ -36,28 +37,35 @@ public class LearnController {
     		if (red.isSelected()) {
     			if(blue.isSelected()) {
     				color.setText("Purple");
+    				color.setTextFill(Color.PURPLE);
     				if(yellow.isSelected()) {
     					color.setText("Brown");
+    					color.setTextFill(Color.BROWN);
     				}
     			}
     			else if(yellow.isSelected()) {
     				color.setText("Orange");
+    				color.setTextFill(Color.ORANGE);
     			}
     			else {
     				color.setText("Red");
+    				color.setTextFill(Color.RED);
     			}
     		
     		}
     		else if (blue.isSelected()) {
     			if (yellow.isSelected()) {
     				color.setText("Green");
+    				color.setTextFill(Color.GREEN);
     			}
     			else {
     				color.setText("Blue");
+    				color.setTextFill(Color.BLUE);
     			}
     		}
     		else if(yellow.isSelected()) {
     			color.setText("Yellow");
+    			color.setTextFill(Color.YELLOW);
     		}
     		/*if (red.isSelected() & blue.isSelected()) {
 	    		color.setText("Purple");
@@ -71,6 +79,7 @@ public class LearnController {
 	    	}*/
 	    	else {
 	    		color.setText("No Color Selected");
+	    		color.setTextFill(Color.BLACK);
 	    	}
     	} 
 
