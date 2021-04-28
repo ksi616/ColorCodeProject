@@ -17,17 +17,17 @@
          <children>
             <ImageView fitHeight="800.0" fitWidth="908.0" layoutX="-8.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../Desktop/New%20folder/Background.png" />
+                  <Image url="Background.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="727.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/New%20folder/Back%20button.png" />
+                  <Image url="Back button.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="538.0" fitWidth="583.0" layoutX="182.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/Project%20design%20pics/Color%20selection.png" />
+                  <Image url="Color selection.png" />
                </image></ImageView>
             <Button fx:id="home" layoutX="726.0" layoutY="590.0" mnemonicParsing="false" onAction="#onHome" opacity="0.0" prefHeight="100.0" prefWidth="100.0" text="Home" />
             <CheckBox fx:id="red" layoutX="246.0" layoutY="253.0" mnemonicParsing="false" onAction="#createColor" text="Red" textFill="WHITE">
