@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LearnController">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LearnController">
    <children>
-      <AnchorPane prefHeight="800.0" prefWidth="900.0">
+      <AnchorPane layoutX="7.0" prefHeight="800.0" prefWidth="900.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f23" height="81.0" layoutX="247.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="89.0" layoutX="442.0" layoutY="103.0" stroke="BLACK" strokeType="INSIDE" width="89.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="89.0" layoutX="630.0" layoutY="104.0" stroke="BLACK" strokeType="INSIDE" width="147.0" />
-            <Button fx:id="home" layoutX="698.0" layoutY="598.0" mnemonicParsing="false" onAction="#onHome" prefHeight="100.0" prefWidth="100.0" text="Home" />
-            <CheckBox fx:id="red" layoutX="164.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" text="Red">
+            <ImageView fitHeight="800.0" fitWidth="908.0" layoutX="-8.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Desktop/New%20folder/Background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="727.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/New%20folder/Back%20button.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="538.0" fitWidth="583.0" layoutX="182.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Project%20design%20pics/Color%20selection.png" />
+               </image></ImageView>
+            <Button fx:id="home" layoutX="726.0" layoutY="590.0" mnemonicParsing="false" onAction="#onHome" opacity="0.0" prefHeight="100.0" prefWidth="100.0" text="Home" />
+            <CheckBox fx:id="red" layoutX="246.0" layoutY="253.0" mnemonicParsing="false" onAction="#createColor" text="Red" textFill="WHITE">
                <font>
                   <Font size="47.0" />
                </font></CheckBox>
-            <CheckBox fx:id="blue" layoutX="356.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="189.0" text="Blue">
+            <CheckBox fx:id="blue" layoutX="488.0" layoutY="253.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="189.0" text="Blue" textFill="WHITE">
                <font>
                   <Font size="47.0" />
                </font></CheckBox>
-            <CheckBox fx:id="yellow" layoutX="552.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="231.0" text="Yellow">
+            <CheckBox fx:id="yellow" layoutX="336.0" layoutY="443.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="231.0" text="Yellow">
                <font>
                   <Font size="47.0" />
                </font></CheckBox>
-            <Label fx:id="color" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="271.0" text="No Color is Selected" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+            <Label fx:id="color" alignment="CENTER" layoutX="216.0" layoutY="640.0" text="No Color is Selected" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
                <font>
-                  <Font size="47.0" />
+                  <Font name="Lucida Bright Demibold Italic" size="47.0" />
                </font></Label>
+            <Label layoutX="719.0" layoutY="690.0" text="Go Back!">
+               <font>
+                  <Font name="Lucida Bright Demibold Italic" size="30.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>
