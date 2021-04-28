@@ -4,26 +4,30 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LearnController">
    <children>
       <AnchorPane prefHeight="800.0" prefWidth="900.0">
          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f23" height="81.0" layoutX="247.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="89.0" layoutX="442.0" layoutY="103.0" stroke="BLACK" strokeType="INSIDE" width="89.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="89.0" layoutX="630.0" layoutY="104.0" stroke="BLACK" strokeType="INSIDE" width="147.0" />
             <Button fx:id="home" layoutX="698.0" layoutY="598.0" mnemonicParsing="false" onAction="#onHome" prefHeight="100.0" prefWidth="100.0" text="Home" />
-            <CheckBox fx:id="red" layoutX="164.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" text="Red" textFill="RED">
+            <CheckBox fx:id="red" layoutX="164.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" text="Red">
                <font>
                   <Font size="47.0" />
                </font></CheckBox>
-            <CheckBox fx:id="blue" layoutX="356.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="189.0" text="Blue" textFill="BLUE">
+            <CheckBox fx:id="blue" layoutX="356.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="189.0" text="Blue">
                <font>
                   <Font size="47.0" />
                </font></CheckBox>
-            <CheckBox fx:id="yellow" layoutX="552.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="231.0" text="Yellow" textFill="YELLOW">
+            <CheckBox fx:id="yellow" layoutX="552.0" layoutY="113.0" mnemonicParsing="false" onAction="#createColor" prefHeight="69.0" prefWidth="231.0" text="Yellow">
                <font>
                   <Font size="47.0" />
                </font></CheckBox>
-            <Label fx:id="color" alignment="CENTER" layoutX="241.0" layoutY="271.0" text="No Color is Selected" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+            <Label fx:id="color" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="271.0" text="No Color is Selected" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
                <font>
                   <Font size="47.0" />
                </font></Label>
