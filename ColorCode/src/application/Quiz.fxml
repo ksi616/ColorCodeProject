@@ -18,7 +18,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="redBtn" alignment="CENTER" layoutX="390.0" layoutY="29.0" mnemonicParsing="false" onAction="#redBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="RED" textFill="#dddddd">
+      <Button fx:id="redBtn" alignment="CENTER" layoutX="390.0" layoutY="400.0" mnemonicParsing="false" onAction="#redBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="RED" textFill="#dddddd">
          <effect>
             <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
          </effect>
@@ -26,7 +26,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="blueBtn" alignment="CENTER" layoutX="120.0" layoutY="254.0" mnemonicParsing="false" onAction="#blueBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="BLUE" textFill="#dddddd">
+      <Button fx:id="blueBtn" alignment="CENTER" layoutX="120.0" layoutY="400.0" mnemonicParsing="false" onAction="#blueBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="BLUE" textFill="#dddddd">
          <effect>
             <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
          </effect>
@@ -34,7 +34,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="yellowBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="660.0" layoutY="254.0" mnemonicParsing="false" onAction="#yellowBtnToggle" prefHeight="100.0" prefWidth="133.0" stylesheets="application/application.css" text="YELLOW" textFill="#dddddd">
+      <Button fx:id="yellowBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="660.0" layoutY="400.0" mnemonicParsing="false" onAction="#yellowBtnToggle" prefHeight="100.0" prefWidth="133.0" stylesheets="application/application.css" text="YELLOW" textFill="#dddddd">
          <effect>
             <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
          </effect>
@@ -42,21 +42,21 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="submitBtn" layoutX="398.0" layoutY="282.0" mnemonicParsing="false" onAction="#submit" prefHeight="50.0" prefWidth="120.0" text="SUBMIT">
+      <Button fx:id="submitBtn" layoutX="398.0" layoutY="572.0" mnemonicParsing="false" onAction="#submit" prefHeight="50.0" prefWidth="120.0" text="SUBMIT">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Label layoutX="288.0" layoutY="238.0" text="Choose colors and click submit.">
+      <Label layoutX="288.0" layoutY="528.0" text="Choose colors and click submit.">
          <font>
             <Font size="26.0" />
          </font>
       </Label>
-      <Label layoutX="85.0" layoutY="608.0" text="What colors make:">
+      <Label layoutX="85.0" layoutY="150.0" text="What colors make:">
          <font>
             <Font size="34.0" />
          </font>
       </Label>
-      <Rectangle fx:id="randomColor" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="398.0" layoutY="558.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle fx:id="randomColor" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="390.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="135.0" />
 	</children>
 </AnchorPane>
