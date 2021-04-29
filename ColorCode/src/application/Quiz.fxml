@@ -15,6 +15,7 @@
 	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
 	fx:controller="application.QuizController">
 	<children>
+<<<<<<< HEAD
 		<Button fx:id="homeBtn" layoutX="693.0" layoutY="608.0"
 			mnemonicParsing="false" onAction="#onHome" prefHeight="100.0"
 			prefWidth="100.0" text="HOME">
@@ -80,5 +81,74 @@
 		<Rectangle fx:id="randomColor" arcHeight="5.0"
 			arcWidth="5.0" fill="WHITE" height="150.0" layoutX="398.0"
 			layoutY="558.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+=======
+      <ImageView fitHeight="800.0" fitWidth="901.0" opacity="0.89" pickOnBounds="true">
+         <image>
+            <Image url="https://raw.githubusercontent.com/ksi616/ColorCodeProject/master/background.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f873eb" height="54.0" layoutX="285.0" layoutY="59.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="332.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="726.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://raw.githubusercontent.com/ksi616/ColorCodeProject/master/Back%20button.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#78e0ff" height="54.0" layoutX="54.0" layoutY="344.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="796.0" />
+				<Button fx:id="homeBtn" layoutX="726.0" layoutY="590.0" mnemonicParsing="false" onAction="#onHome" opacity="0.0" prefHeight="100.0" prefWidth="100.0" text="HOME">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="redBtn" alignment="CENTER" layoutX="386.0" layoutY="446.0" mnemonicParsing="false" onAction="#redBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="RED" textFill="#dddddd">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="blueBtn" alignment="CENTER" layoutX="129.0" layoutY="446.0" mnemonicParsing="false" onAction="#blueBtnToggle" prefHeight="100.0" prefWidth="135.0" stylesheets="application/application.css" text="BLUE" textFill="#dddddd">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="yellowBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="619.0" layoutY="446.0" mnemonicParsing="false" onAction="#yellowBtnToggle" prefHeight="100.0" prefWidth="133.0" stylesheets="application/application.css" text="YELLOW" textFill="#dddddd">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#00000080" />
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitBtn" layoutX="359.0" layoutY="634.0" mnemonicParsing="false" onAction="#submit" prefHeight="61.0" prefWidth="190.0" text="SUBMIT">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="35.0" />
+         </font>
+      </Button>
+      <Label layoutX="64.0" layoutY="347.0" prefHeight="47.0" prefWidth="780.0" text="Choose colors to mix and click submit.">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="65.0" text="What colors make ">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="randomColor" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="385.0" layoutY="196.0" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <ImageView fitHeight="88.0" fitWidth="65.0" layoutX="488.0" layoutY="668.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://raw.githubusercontent.com/ksi616/ColorCodeProject/master/Submit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="710.0" layoutY="684.0" text="Go Back!">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="30.0" />
+         </font>
+      </Label>
+>>>>>>> branch 'master' of https://github.com/ksi616/ColorCodeProject.git
 	</children>
 </AnchorPane>
