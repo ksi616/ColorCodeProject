@@ -22,11 +22,14 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 public class QuizController implements Initializable {
-	boolean redToggle, yellowToggle, blueToggle = false;
-	Color[] colors = new Color[] { Color.ORANGE, Color.GREEN, Color.PURPLE, Color.SADDLEBROWN };
-	Random rng = new Random();
-	Color rngColor;
-	String colorAnswer = null;
+	// initializing values for quiz logic
+	boolean redToggle, yellowToggle, blueToggle = false;//color toggles to evaluate submitted answer
+	Color[] colors = new Color[] { 						//array of colors to choose from randomly
+			Color.ORANGE, Color.GREEN,
+			Color.PURPLE, Color.SADDLEBROWN };
+	Random rng = new Random();							//random value to choose from colors array
+	Color rngColor;										//color chosen randomly
+	String colorAnswer = null;							//answer from user
 	
 	@FXML
     private Button homeBtn;
@@ -42,18 +45,28 @@ public class QuizController implements Initializable {
     private Rectangle randomColor;
 
 	@Override
+	/*initialize method :
+	*	Use rng to get random value from colors array and assign to rngColor.
+	 	Fill randomColor with random color chosen to display to user.*/
 	public void initialize(URL location, ResourceBundle resources) {
 		rngColor = colors[rng.nextInt(colors.length)];
 		randomColor.setFill(rngColor);
 	}
 	
     @FXML
+    /*onHome method:
+     *	Return to home view.*/
     void onHome(ActionEvent event) throws IOException {
     	Parent needGive = FXMLLoader.load(getClass().getResource("Main.fxml"));
 		Stage window = (Stage) homeBtn.getScene().getWindow();
 		window.setScene(new Scene(needGive, 900, 800));
     }
     
+    /*redBtnToggle, yellowBtnToggle, and blueBtnToggle methods:
+    *	Toggle buttons to set either redToggle, yellowToggle, or blueToggle values.
+    *	Set redBtn, yellowBtn, or blueBtn to either original or darkened color to simulate button
+    *	pressed based on toggle.
+    *	Call evalColors method to evaluate which buttons are currently chosen.*/
     @FXML
     void redBtnToggle(ActionEvent event) {
     	redToggle = !redToggle;
@@ -77,7 +90,10 @@ public class QuizController implements Initializable {
     }
     
     @FXML
+    /*submit method:
+     *	Prompt user based on values submitted.*/
     void submit(ActionEvent event) {
+    	// If no colors are chosen -
     	if(colorAnswer == null) {
     		Alert a = new Alert(AlertType.ERROR);
     		a.setTitle("Oops");
@@ -86,7 +102,7 @@ public class QuizController implements Initializable {
 	    	a.show();
 	    	return;
     	}
-    	
+    	// If colors chosen are equal to random color generated -
     	if(colorAnswer.contentEquals(rngColor.toString())) {
     		Alert a = new Alert(AlertType.INFORMATION);
     		Image smileImage = new Image(getClass().getResource("smile.png").toExternalForm());
@@ -103,6 +119,7 @@ public class QuizController implements Initializable {
 				rngColor = colors[rng.nextInt(colors.length)];
 				randomColor.setFill(rngColor);
 	    	}
+	    // If colors chosen are not equal to random generated color - 
     	} else {
     		String color = "";
     		switch(rngColor.toString()) {
@@ -128,6 +145,8 @@ public class QuizController implements Initializable {
     	}
     }
     
+    /*evalColors method:
+     *	Evaluate colors chosen based buttons toggled and assign value to colorAnswer to return.*/
     String evalColors(boolean red, boolean yellow, boolean blue) {
     	if (red == true) {
     		colorAnswer = "0xff0000ff";//Red
@@ -152,6 +171,8 @@ public class QuizController implements Initializable {
     	return colorAnswer;
     }
     
+    /*resetValues method:
+     *	Reset button colors, color toggles, and colorAnswer to initial values.*/
     void resetValues() {
     	redBtn.setStyle("-fx-background-color: red;");
     	yellowBtn.setStyle("-fx-background-color: yellow;");
