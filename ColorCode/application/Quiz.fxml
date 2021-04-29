@@ -15,7 +15,6 @@
 	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
 	fx:controller="application.QuizController">
 	<children>
-<<<<<<< HEAD
 		<Button fx:id="homeBtn" layoutX="693.0" layoutY="608.0"
 			mnemonicParsing="false" onAction="#onHome" prefHeight="100.0"
 			prefWidth="100.0" text="HOME">
@@ -81,7 +80,6 @@
 		<Rectangle fx:id="randomColor" arcHeight="5.0"
 			arcWidth="5.0" fill="WHITE" height="150.0" layoutX="398.0"
 			layoutY="558.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
-=======
       <ImageView fitHeight="800.0" fitWidth="901.0" opacity="0.89" pickOnBounds="true">
          <image>
             <Image url="https://raw.githubusercontent.com/ksi616/ColorCodeProject/master/background.jpg" />
@@ -149,6 +147,5 @@
             <Font name="Lucida Bright Demibold Italic" size="30.0" />
          </font>
       </Label>
->>>>>>> branch 'master' of https://github.com/ksi616/ColorCodeProject.git
 	</children>
 </AnchorPane>

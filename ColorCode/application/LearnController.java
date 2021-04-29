@@ -16,7 +16,7 @@ public class LearnController {
 	
     @FXML
     private Button home;
-
+ 
     @FXML
     private CheckBox red;
 
