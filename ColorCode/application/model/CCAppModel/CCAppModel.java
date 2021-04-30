@@ -27,16 +27,28 @@ public class CCAppModel {
 	}
 	
 	public static void yellowBtnPressed(boolean redToggle, boolean yellowToggle, boolean blueToggle, Button yellowBtn) {
-    	yellowToggle = !yellowToggle;
-    	if(yellowToggle) yellowBtn.setStyle("-fx-background-color: darkred;");
-    	if(!yellowToggle) yellowBtn.setStyle("-fx-background-color: red;");
+		QuizController.setYellowToggle(!yellowToggle);
+    	if(yellowToggle) {
+    		yellowBtn.setStyle("-fx-background-color: darkyellow;");
+    		QuizController.setYellowBtn(yellowBtn);
+    	}
+    	if(!yellowToggle) {
+    		yellowBtn.setStyle("-fx-background-color: yellow;");
+    		QuizController.setYellowBtn(yellowBtn);
+    	}
     	evalColors(redToggle, yellowToggle, blueToggle);
 	}
 	
 	public static void blueBtnPressed(boolean redToggle, boolean yellowToggle, boolean blueToggle, Button blueBtn) {
-    	blueToggle = !blueToggle;
-    	if(blueToggle) blueBtn.setStyle("-fx-background-color: darkred;");
-    	if(!blueToggle) blueBtn.setStyle("-fx-background-color: red;");
+		QuizController.setBlueToggle(!blueToggle);
+    	if(blueToggle) {
+    		blueBtn.setStyle("-fx-background-color: darkblue;");
+    		QuizController.setBlueBtn(blueBtn);
+    	}
+    	if(!blueToggle) {
+    		blueBtn.setStyle("-fx-background-color: blue;");
+    		QuizController.setBlueBtn(blueBtn);
+    	}
     	evalColors(redToggle, yellowToggle, blueToggle);
 	}
 	

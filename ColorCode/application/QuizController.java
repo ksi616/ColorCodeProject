@@ -23,7 +23,7 @@ public class QuizController implements Initializable {
 			Color.ORANGE, Color.GREEN,
 			Color.PURPLE, Color.SADDLEBROWN };
 	private static Random rng = new Random();							//random value to choose from colors array
-	private static Color rngColor;										//color chosen randomly
+	private static Color rngColor = colors[rng.nextInt(colors.length)];	//color chosen randomly
 	private static String colorAnswer = null;							//answer from user
 	
 	@FXML
@@ -37,7 +37,7 @@ public class QuizController implements Initializable {
 	@FXML
 	private Button submitBtn;
 	@FXML
-    private static Rectangle randomColor;
+    private static Rectangle randomColor = new Rectangle();
 
 	public static boolean getRedToggle() 				{ return redToggle; }
 	public static void setRedToggle(boolean toggle) 	{ redToggle = toggle; }
@@ -67,6 +67,11 @@ public class QuizController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		//setRngColor(getColors()[getRng().nextInt(getColors().length)]);
 		//getRandomColor().setFill(getRngColor());
+//		Color[] colors1 = getColors();
+//		setRngColor(colors1[getRng().nextInt(colors.length)]);
+//		Rectangle randomColor1 = getRandomColor();
+//		randomColor1.setFill(getRngColor());
+//		setRandomColor(randomColor1);
 		rngColor = colors[rng.nextInt(colors.length)];
 		randomColor.setFill(rngColor);
 	}
