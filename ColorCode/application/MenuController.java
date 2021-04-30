@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 
 public class MenuController {
 	
+	//Created buttons for menu
     @FXML
     private Button learnButton;
 
@@ -21,7 +22,7 @@ public class MenuController {
     @FXML
     private Button listButton;
     
-    
+    //takes user to scenes it clicks on
 	@FXML
 	void onLearn(ActionEvent event) throws IOException {
 		Parent menu = FXMLLoader.load(getClass().getResource("Learn.fxml"));
