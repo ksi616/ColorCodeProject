@@ -1,3 +1,4 @@
+//Starts up application
 package application;
 	
 import javafx.application.Application;
