@@ -1,3 +1,4 @@
+//Daniel Rodriguez (ksi616): Logic for learn scene
 package application;
 
 import java.io.IOException;
@@ -14,6 +15,7 @@ import javafx.stage.Stage;
 
 public class LearnController {
 	
+	//all button, checkbox, and labels created
     @FXML
     private Button home;
  
@@ -29,7 +31,7 @@ public class LearnController {
     @FXML
     private Label color;
 
-    
+    //Logic for when user selects colors to create colors
     @FXML
     void createColor(ActionEvent event) {
     		if (red.isSelected()) {
@@ -70,7 +72,8 @@ public class LearnController {
 	    		color.setTextFill(Color.BLACK);
 	    	}
     	} 
-
+    
+    //Returns user to home scene
     @FXML
     void onHome(ActionEvent event) throws IOException {
     	Parent needGive = FXMLLoader.load(getClass().getResource("Main.fxml"));
